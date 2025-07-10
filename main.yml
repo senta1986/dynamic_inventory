@@ -1,8 +1,8 @@
 ---
-- name: Working the inventory
-  hosts: web
+- name: update the content
+  hosts: webservers
   tasks:
-   - name: copy the content with banner
-     ansible.builtin.copy: 
-      content: "Sun set down in east"
-      dest: /etc/motd.d/banner
+    - name: update the file
+      ansible.builtin.copy:
+        content: "Sun det down in east"
+        dest: /etc/motd.d/banner
