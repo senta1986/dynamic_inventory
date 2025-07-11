@@ -1,5 +1,5 @@
 ---
-- name: Copy the content using python
+- name: copy the content
   hosts: webservers
   tasks:
     - name: update the content
