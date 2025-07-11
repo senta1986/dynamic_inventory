@@ -1,8 +1,8 @@
 ---
-- name: update the content
+- name: Copy the content using python
   hosts: webservers
   tasks:
-    - name: update the file
+    - name: update the content
       ansible.builtin.copy:
-        content: "Sun det down in east"
+        content: "Sun set down in east"
         dest: /etc/motd.d/banner
